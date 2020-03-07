@@ -4,12 +4,9 @@
 #include "Pessoa.h"
 #include "Funcionario.h"
 #include "Professor.h"
-#include "TestaPessoa.h"
 
 int main()
 {
-
-
 
 	Pessoa pessoa1("Mario", "Lopes");
 	Funcionario pessoa2("Lucas", "Mendes", 403616, 2000.00);
@@ -20,6 +17,15 @@ int main()
 	string nome, sobrenome, nomecompleto;
 
 
+	nome = pessoa1.getNome();
+	sobrenome = pessoa1.getSobreNome();
+	nomecompleto = pessoa1.getNomeCompleto();
+
+	cout << "\n----------------PESSOA 1----------------\n" << endl;
+	cout << "Nome: " << nome << endl;
+	cout << "Sobrenome: " << sobrenome << endl;
+	cout << "Nome Completo: " << nomecompleto << endl;
+
 	nome = pessoa2.getNome();
 	sobrenome = pessoa2.getSobreNome();
 	nomecompleto = pessoa2.getNomeCompleto();
@@ -28,13 +34,7 @@ int main()
 	salario1 = pessoa2.getSalarioPrimeiraParcela();
 	salario2 = pessoa2.getSalarioSegundaParcela();
 
-
-	cout << "----------------PESSOA 1----------------" << endl;
-	cout << "Nome: " << nome << endl;
-	cout << "Sobrenome: " << sobrenome << endl;
-	cout << "Nome Completo: " << nomecompleto << endl;
-
-	cout << "----------------PESSOA 2----------------" << endl;
+	cout << "\n----------------PESSOA 2----------------\n" << endl;
 	cout << "Nome: " << nome << endl;
 	cout << "Sobrenome: " << sobrenome << endl;
 	cout << "Nome Completo: " << nomecompleto << endl;
@@ -43,7 +43,15 @@ int main()
 	cout << "Salario Primeira Parcela: " << salario1 << endl;
 	cout << "Salario Segunda Parcela: " << salario2 << endl;
 
-	cout << "----------------PESSOA 3----------------" << endl;
+	nome = pessoa3.getNome();
+	sobrenome = pessoa3.getSobreNome();
+	nomecompleto = pessoa3.getNomeCompleto();
+	matricula = pessoa3.getMatricula();
+	salario = pessoa3.getSalario();
+	salario1 = pessoa3.getSalarioPrimeiraParcela();
+	salario2 = pessoa3.getSalarioSegundaParcela();
+
+	cout << "\n----------------PESSOA 3----------------\n" << endl;
 	cout << "Nome: " << nome << endl;
 	cout << "Sobrenome: " << sobrenome << endl;
 	cout << "Nome Completo: " << nomecompleto << endl;
